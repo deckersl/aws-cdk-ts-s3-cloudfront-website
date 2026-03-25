@@ -1,36 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Static website</title>
+  <title>Static Website — S3 + CloudFront</title>
   <meta charset="UTF-8" />
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="./favicon-32px.png">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  ––––––––––––––––––––––––––––––––––––––––––––––––––
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css"> -->
-  <link rel="stylesheet" href="./styles.css" />  
+  <link href="//fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <div class="container">
-    <div class="row">
-      <h1>Welcome,</h1>
-      <p>This website is based on a static single page.</p>
-   </div>
+    <h1>Welcome</h1>
+    <p class="subtitle">Static site deployed to AWS S3 + CloudFront via CDK</p>
+
+    <div class="card">
+      <h2>Stack Versions</h2>
+      <dl class="versions">
+        <dt>AWS CDK</dt>      <dd>2.177.0</dd>
+        <dt>Node.js</dt>      <dd>22.22.1</dd>
+        <dt>TypeScript</dt>   <dd>5.3.3</dd>
+        <dt>Constructs</dt>   <dd>10.6.0</dd>
+      </dl>
+    </div>
+
+    <span class="badge">Deployed 2026-03-25</span>
   </div>
 </body>
 </html>
